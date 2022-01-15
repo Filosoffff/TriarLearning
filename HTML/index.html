@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Document title in browser tabs -->
+  <title>HTML Basics</title>
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Additional approach to add favicon -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+  <!-- SEO -->
+  <meta name="description" content="Test web page">
+  <meta name="keywords" content="html, webdev, Yauhen">
+  <meta name="author" content="Yauhen Kavalchuk">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- For mobile & no resize -->
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For external styles -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- LISTS -->
+
+  <!-- Unordered List -->
+  <ul>
+    <li>Front-end Developer</li>
+    <li>Bask-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ul>
+  <hr>
+
+  <!-- Ordered List -->
+  <ol>
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ol>
+  <hr>
+
+  <!-- Ordered List with start -->
+  <ol start="10">
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ol>
+  <hr>
+
+  <!-- Ordered List with reversed -->
+  <ol reversed>
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ol>
+  <hr>
+
+  <!-- Nested Unordered List -->
+  <ul>
+    <li>
+      Front-end Developer
+      <ul>
+        <li>Mobile</li>
+        <li>UI</li>
+        <li>Node.js</li>
+      </ul>
+    </li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ul>
+  <hr>
+
+  <!-- Nested Ordered List -->
+  <ol>
+    <li>
+      Front-end Developer
+      <ol>
+        <li>Mobile</li>
+        <li>UI</li>
+        <li>Node.js</li>
+      </ol>
+    </li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ol>
+  <hr>
+
+  <!-- Nested Unordered List with Inner Ordered List -->
+  <ul>
+    <li>
+      Front-end Developer
+      <ol>
+        <li>Mobile</li>
+        <li>UI</li>
+        <li>Node.js</li>
+      </ol>
+    </li>
+    <li>Back-end Developer</li>
+    <li>Full-stack Developer</li>
+  </ul>
+  <hr>
+
+  <!-- Definitions List -->
+  <dl>
+    <dt>Front-end Developer</dt>
+    <dd>It is a person who works with the visible part of website.</dd>
+
+    <dt>Back-end Developer</dt>
+    <dd>It is a person who works with the hidden part of a website, including databases and environments.</dd>
+  </dl>
+  <hr>
+
+  <!-- TABLES -->
+
+  <!-- Minimum valid markup for table -->
+  <table>
+    <tr>
+      <td>Front-end</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Table row with data -->
+  <table>
+    <tr>
+      <td>Front-end</td>
+      <td>Back-end</td>
+      <td>Full-stack</td>
+      <td>QA</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Table column with data -->
+  <table>
+    <tr>
+      <td>Front-end</td>
+    </tr>
+    <tr>
+      <td>Back-end</td>
+    </tr>
+    <tr>
+      <td>Full-stack</td>
+    </tr>
+    <tr>
+      <td>QA</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Simple example of table -->
+  <table>
+    <tr>
+      <td>Front-end</td>
+      <td>1 Person</td>
+    </tr>
+    <tr>
+      <td>Back-end</td>
+      <td>7 Persons</td>
+    </tr>
+    <tr>
+      <td>Full-stack</td>
+      <td>2 Persons</td>
+    </tr>
+    <tr>
+      <td>QA</td>
+      <td>5 Persons</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Table with caption -->
+  <table>
+    <caption>Team members list</caption>
+    <tr>
+      <td>Front-end</td>
+      <td>1 Person</td>
+    </tr>
+    <tr>
+      <td>Back-end</td>
+      <td>7 Persons</td>
+    </tr>
+    <tr>
+      <td>Full-stack</td>
+      <td>2 Persons</td>
+    </tr>
+    <tr>
+      <td>QA</td>
+      <td>5 Persons</td>
+    </tr>
+  </table>
+  <hr>
+
+  <!-- Table with semantic sections -->
+  <table>
+
+    <caption>Team members list</caption>
+
+    <thead>
+      <tr>
+        <td>Speciality</td>
+        <td>Quantity</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Front-end</td>
+        <td>1 Person</td>
+      </tr>
+      <tr>
+        <td>Back-end</td>
+        <td>7 Persons</td>
+      </tr>
+      <tr>
+        <td>Full-stack</td>
+        <td>2 Persons</td>
+      </tr>
+      <tr>
+        <td>QA</td>
+        <td>5 Persons</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td></td>
+        <td>15</td>
+      </tr>
+    </tfoot>
+
+  </table>
+  <hr>
+
+  <!-- Colspan in tfoot and th tag for table head -->
+  <table>
+
+    <caption>Team members list</caption>
+
+    <thead>
+      <tr>
+        <th>Speciality</th>
+        <th>Quantity</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Front-end</td>
+        <td>1 Person</td>
+      </tr>
+      <tr>
+        <td>Back-end</td>
+        <td>7 Persons</td>
+      </tr>
+      <tr>
+        <td>Full-stack</td>
+        <td>2 Persons</td>
+      </tr>
+      <tr>
+        <td>QA</td>
+        <td>5 Persons</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="2">15</td>
+      </tr>
+    </tfoot>
+
+  </table>
+  <hr>
+
+  <!-- LINKS AND BUTTONS -->
+
+  <!-- Simple link -->
+  <a href="https://youtube.com/YauhenKavalchuk">Youtube</a>
+  <hr>
+
+  <!-- Download link -->
+  <a href="test.txt" download>Download</a>
+  <hr>
+
+  <!-- Open link in new tab -->
+  <a href="https://youtube.com/YauhenKavalchuk" target="_blank">Youtube</a>
+  <hr>
+
+  <!-- Open link in new tab -->
+  <a href="tel:+123-32-23">+123-32-23</a><br>
+  <a href="mailto:test@test.com">My e-mail</a><br>
+  <a href="skype:test">Skype Call</a><br>
+  <hr>
+
+  <!-- Anchor link -->
+  <a href="#bottom">Go to Bottom</a>
+  <hr>
+
+  <!-- Simple buttons -->
+  <button type="button">Button</button>
+  <button type="submit">Button</button>
+  <button type="reset">Button</button>
+  <hr>
+
+  <!-- Button with autofocus -->
+  <button type="button" autofocus>Button</button>
+  <hr>
+
+  <!-- Disabled Button -->
+  <button type="button" disabled>Button</button>
+  <hr>
+
+  <!-- Necessary div with id -->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p id="bottom">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+  <!-- TAGS -->
+
+  <!-- Abbreviation -->
+  <abbr title="HyperText Markup Language">HTML</abbr> was created in 1993.
+  <hr>
+
+  <!-- List of options -->
+  <input list="list">
+  <datalist id="list">
+    <option value="Front-end">
+    <option value="Back-end">
+    <option value="Full-stack">
+  </datalist>
+  <hr>
+
+  <!-- Meter -->
+  <meter value="0" max="100" low="10" high="60">Course Progress</meter><br>
+  <meter value="20" max="100" low="40" high="60">Course Progress</meter><br>
+  <meter value="80" max="100" low="10" high="60">Course Progress</meter><br>
+  <meter value="100" max="100">Course Progress</meter>
+  <hr>
+
+  <!-- Progress bar -->
+  <progress value="30" max="100"></progress>
+  <hr>
+
+  <!-- No scripts tag -->
+  <noscript>Please switch on scripts in your browser!</noscript>
+
+  <!-- Marked text -->
+  <mark>Marked</mark>
+  <h2>To know HTML <mark>semantic</mark> is important</h2>
+  <hr>
+
+  <canvas id="example" width="200" height="200"></canvas>
+  <script>
+    const drawingCanvas = document.getElementById('example');
+    if (drawingCanvas && drawingCanvas.getContext) {
+      const context = drawingCanvas.getContext('2d');
+      context.fillStyle = "#000";
+      context.beginPath();
+      context.arc(100, 100, 100, 0, Math.PI * 2, true);
+      context.closePath();
+      context.stroke();
+      context.fill();
+    }
+  </script>
+
+  <!-- GLOBAL SITE STRUCTURE -->
+
+  <!-- Header -->
+  <header>
+    HEADER
+    <!-- Main navigation -->
+    <nav>NAVIGATION</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    MAIN
+    <!-- Independent block -->
+    <section>
+      SECTION
+      <!-- Peace of news, article -->
+      <article>ARTICLE 1</article>
+      <article>ARTICLE 2</article>
+      <article>ARTICLE 3</article>
+
+    </section>
+
+    <section>
+      SECTION
+      <article>ARTICLE 4</article>
+    </section>
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside>ASIDE</aside>
+
+  <!-- Footer -->
+  <footer>FOOTER</footer>
+
+  <!-- FORMS -->
+  <!-- Simple form -->
+  <form action="formHandler.php" name="simple form" autocomplete="on">
+
+    <input type="text" /><br>
+
+    <select>
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end">Back-end</option>
+    </select><br>
+
+    <textarea rows="10" cols="45" name="text"></textarea><br>
+
+    <input type="submit"><br>
+
+  </form>
+  <hr>
+
+  <!-- Fieldset & label -->
+  <form action="formHandler.php" name="simple form2">
+
+    <fieldset>
+
+      <legend>Simple form legend</legend>
+
+      <input type="text" /><br>
+
+      <select>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </select><br>
+
+      <textarea rows="10" cols="45" name="text"></textarea><br>
+
+      <input type="submit"><br>
+
+    </fieldset>
+
+  </form>
+  <hr>
+
+  <!-- Inner fieldset & label -->
+  <form action="formHandler.php" name="simple form3">
+
+    <fieldset>
+      <legend>Personal data</legend>
+      <input type="text" /><br>
+      <select>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Personal Message</legend>
+      <textarea rows="10" cols="45" name="text"></textarea><br>
+    </fieldset>
+
+    <input type="submit"><br>
+
+  </form>
+  <hr>
+
+  <!-- Form element label -->
+  <label for="username">Username</label>
+  <input id="username"><br>
+
+  <label>
+    Password
+    <input type="password">
+  </label>
+  <hr>
+
+  <!-- Result form -->
+  <form action="formHandler.php" name="simple form3">
+
+    <fieldset>
+      <legend>Personal data</legend>
+      <label for="name">Your name</label>
+      <input type="text" id="name" /><br>
+      <label for="speciality">Choose your speciality</label>
+      <select id="speciality">
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </select><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Personal Message</legend>
+      <label for="message">Enter your message</label>
+      <textarea id="message" rows="10" cols="45" name="text"></textarea><br>
+    </fieldset>
+
+    <input type="submit"><br>
+
+  </form>
+  <hr>
+
+  <!-- Textarea -->
+  <textarea rows="10" cols="45"></textarea><br>
+  <textarea rows="5" cols="20" name="test"></textarea><br>
+  <textarea rows="5" cols="20" autofocus></textarea><br>
+  <textarea rows="5" cols="20" disabled></textarea><br>
+  <textarea rows="5" cols="20" readonly>This text you can't change</textarea><br>
+  <textarea rows="5" cols="20" placeholder="your message..."></textarea><br>
+  <textarea rows="5" cols="20" maxlength="5"></textarea><br>
+  <textarea rows="5" cols="20" required></textarea><br>
+  <hr>
+
+  <!-- Required attribute -->
+  <form>
+    <textarea rows="5" cols="20" required></textarea><br>
+    <input type="submit" value="Send">
+  </form>
+  <hr>
+
+  <!-- Select -->
+  <select>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end">Back-end</option>
+  </select>
+  <hr>
+
+  <!-- Select with optgroup -->
+  <select>
+    <optgroup label="Speciality">
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end">Back-end</option>
+    </optgroup>
+
+    <optgroup label="Direction">
+      <option value="Mobile">Mobile development</option>
+      <option value="Node">Node.js development</option>
+    </optgroup>
+  </select>
+  <hr>
+
+  <!-- Multiple select -->
+  <select multiple>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end">Back-end</option>
+  </select>
+  <hr>
+
+  <!-- Different options -->
+  <select>
+    <option value="Front-end">Front-end</option>
+    <option value="Back-end" label="Back-end">
+    <option value="sel" selected>Selected</option>
+    <option value="dis" disabled>Disabled</option>
+  </select>
+  <hr>
+
+  <!-- INPUT -->
+
+  <!-- Text -->
+  <input type="text">
+  <hr>
+
+  <!-- Number -->
+  <input type="number"><br>
+  <input type="number" min="1" max="10"><br>
+  <input type="number" step="5"><br>
+  <hr>
+
+  <!-- Password -->
+  <input type="password">
+  <hr>
+
+  <!-- Range -->
+  <input type="range">
+  <hr>
+
+  <!-- Date -->
+  <input type="date">
+  <hr>
+
+  <!-- Color -->
+  <input type="color">
+  <hr>
+
+  <!-- Submit & reset buttons -->
+  <input type="submit"><br>
+  <input type="reset"><br>
+  <hr>
+
+  <!-- Submit & reset buttons with custom labels -->
+  <input type="submit" value="Submit form"><br>
+  <input type="reset" value="Reset form"><br>
+  <hr>
+
+  <!-- List of options -->
+  <input type="text" list="list">
+  <datalist id="list">
+    <option value="Front-end">
+    <option value="Back-end">
+    <option value="Full-stack">
+  </datalist>
+  <hr>
+
+  <!-- E-mail -->
+  <input type="email">
+  <hr>
+
+  <!-- URL -->
+  <input type="url">
+  <hr>
+
+  <!-- Input image -->
+  <input type="image" src="https://picsum.photos/300/300" alt="Just image">
+  <hr>
+
+  <!-- Telephone -->
+  <input type="tel">
+  <hr>
+
+  <!-- Search -->
+  <input type="search">
+  <hr>
+
+  <!-- Local date & time -->
+  <input type="datetime-local">
+  <hr>
+
+  <!-- Month -->
+  <input type="month">
+  <hr>
+
+  <!-- Time -->
+  <input type="time">
+  <hr>
+
+  <!-- Week -->
+  <input type="week">
+  <hr>
+
+  <!-- Hidden -->
+  <input type="hidden" value="webDev">
+  <hr>
+
+  <!-- File -->
+  <input type="file"><br>
+  <input type="file" multiple><br>
+  <hr>
+
+  <!-- Checkbox -->
+  <input type="checkbox" value="option1"><br>
+  <input type="checkbox" value="option2"><br>
+  <input type="checkbox" value="option3"><br>
+  <hr>
+
+  <!-- Radio -->
+  <input type="radio" name="value" value="option1"><br>
+  <input type="radio" name="value" value="option2"><br>
+  <input type="radio" name="value" value="option3"><br>
+  <hr>
+
+  <!-- Checkbox with checked element -->
+  <input type="checkbox" value="option1" checked><br>
+  <input type="checkbox" value="option2"><br>
+  <input type="checkbox" value="option3"><br>
+  <hr>
+
+  <!-- Radio with checked element -->
+  <input type="radio" name="value" value="option1"><br>
+  <input type="radio" name="value" value="option2" checked><br>
+  <input type="radio" name="value" value="option3"><br>
+  <hr>
+
+  <!-- Checkbox with label -->
+  <label>
+    <input type="checkbox" value="option1" checked>
+    Front-end dev
+  </label><br>
+  <label>
+    <input type="checkbox" value="option2">
+    Back-end dev
+  </label><br>
+  <label>
+    <input type="checkbox" value="option3">
+    Full-stack dev
+  </label>
+  <hr>
+
+  <!-- Radio with label -->
+  <label>
+    <input type="radio" name="value" value="option1">
+    Front-end dev
+  </label><br>
+  <label>
+    <input type="radio" name="value" value="option2" checked>
+    Back-end dev
+  </label><br>
+  <label>
+    <input type="radio" name="value" value="option3">
+    Back-end dev
+  </label>
+  <hr>
+
+  <!-- VIDEO & AUDIO -->
+
+  <!-- Audio -->
+  <audio src="example.mp3">
+    Your browser does not support the audio tag.
+  </audio>
+  <hr>
+
+  <!-- Video -->
+  <video width="320" height="240">
+    <source src="example.ogg" type="video/ogg">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <!-- Audio -->
+  <audio controls>
+    <source src="example.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+  <hr>
+
+  <!-- Video -->
+  <video controls width="320" height="240">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <video controls loop width="320" height="240">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <video controls autoplay width="320" height="240">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <video controls muted width="320" height="240">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <video controls poster="preview.png" width="320" height="240">
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <hr>
+
+  <!-- USEFULL ATRIBUTES -->
+
+   <!-- ID -->
+   <h1 id="heading">Simple text</h1>
+   <hr>
+ 
+   <!-- Class -->
+   <p class="text idea">Simple text</p>
+   <p class="text">Simple text 2</p>
+   <hr>
+ 
+   <!-- Title -->
+   <h2 title="HyperText Markup Language">HTML</h2>
+   <hr>
+ 
+   <!-- Inline styles -->
+   <h2 style="color: red;">CSS</h2>
+   <hr>
+ 
+   <!-- Contenteditable -->
+   <h2 contenteditable="true">This content you can change</h2>
+   <hr>
+ 
+   <!-- Spellcheck -->
+   <textarea spellcheck="true" rows="10" cols="45" name="text">
+     This text cantain a cople misstakes
+   </textarea>
+   <hr>
+ 
+   <!-- Hidden -->
+   <h2 hidden>Hidden content</h2>
+   <hr>
+ 
+   <!-- Without tabindex -->
+   <input type="text" placeholder="name"><br>
+   <input type="text" placeholder="password"><br>
+   <input type="button" value="Submit"><br>
+   <hr>
+ 
+   <!-- With tabindex -->
+   <input type="text" placeholder="name" tabindex="1"><br>
+   <input type="text" placeholder="password" tabindex="3"><br>
+   <input type="button" value="Submit" tabindex="2"><br>
+   <hr>
+ 
+   <!-- Text direction -->
+   <h2 dir="rtl">Hello world!</h2>
+   <hr>
+ 
+   <!-- Language -->
+   <h2 lang="fr"><q>Hello world!</q></h2>
+   <h2 lang="en"><q>Hello world!</q></h2>
+   <hr>
+</body>
+
+</html>
