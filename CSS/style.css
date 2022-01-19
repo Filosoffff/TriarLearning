@@ -1,0 +1,27 @@
+* {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+h1 {
+    color: yellow;
+}
+
+.fz20 {
+    font-size: 20px;
+}
+
+#heading {
+    font-size: 30px;
+}
+
+q.simple {
+    color: aqua;
+}
+
+ul li  > span {
+    font-weight: bold;
+}
