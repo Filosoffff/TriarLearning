@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf')  format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
+}
+
+* {
+    font-family: 'Avenir', Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #3d4e61;
+    max-width: 2000px;
+    min-width: 1000px;
+}
