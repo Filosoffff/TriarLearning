@@ -1,0 +1,38 @@
+footer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px -1px 0px #e1e7ed;
+}
+
+.mainFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 893px;
+    margin: 0 auto;
+}
+
+.footerList {
+    margin-top: 44px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footerLinks > .links{
+    margin-top: 9px;
+    font-weight: 400;
+}
+
+.footerLinks > .links:last-child{
+    margin-bottom: 43px;
+}
