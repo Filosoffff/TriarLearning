@@ -8,6 +8,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   flex: 30%;
   background-color: rgb(146, 17, 17);
@@ -45,7 +49,7 @@ body {
 
 .header button {
   width: 70px;
-  height: 88px;
+  height: 120px;
   border: none;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -82,15 +86,15 @@ body {
 .task .content span {
   display: grid;
   place-items: center;
-  border: 1px solid grey;
   width: 100%;
   height: 100%;
+  border: 1px solid grey;
   font-size: 18px;
   border-right: none;
   background-color: rgb(146, 17, 17);
 }
 
-#taskName {
+.taskName {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }

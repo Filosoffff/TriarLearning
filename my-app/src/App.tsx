@@ -3,24 +3,19 @@ import './App.css';
 import TodoTask from './Components/TodoTask'
 import { ITask } from './Interfaces';
 
+const taskInitialState = {taskName: "", deadline: 0, description: ""};
+
 const App: FC = () => {
-  const [task, setTask] = useState<string>("");
-  const [deadline, setDeadline] = useState<number>(0);
+  const [task, setTask] = useState<ITask>(taskInitialState);
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
-    if (event.target.name === "task") {
-      setTask(event.target.value)
-    } else {
-      setDeadline(Number(event.target.value))
-    }
+    setTask({...task, [event.target.name]: event.target.value});
   };
   
   const addTask = (): void => {
-    const newTask = {taskName: task, deadline: deadline}
-    setTodoList([...todoList, newTask])
-    setTask("");
-    setDeadline(0);
+    setTodoList([...todoList, task])
+    setTask(taskInitialState);
   }
 
   const completeTask = (taskNameToDelete: string): void => {
@@ -33,8 +28,9 @@ const App: FC = () => {
     <div className="App">
       <div className="header">
         <div className='inputContainer'>
-        <input type="text" placeholder="Your task" name="task" value={task} onChange={handleChange} />
-        <input type="number" placeholder="Deadline in days" name="deadline" value={deadline} onChange={handleChange} />
+        <input type="text" placeholder="Your task" name="taskName" value={task.taskName} onChange={handleChange} />
+        <input type="number" placeholder="Deadline in days" name="deadline" value={task.deadline} onChange={handleChange} />
+        <input type="text" placeholder="Description" name="description" value={task.description} onChange={handleChange} />
         </div>
         <button onClick={addTask}>Add Task</button>
       </div>
